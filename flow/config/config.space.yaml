@@ -1,0 +1,128 @@
+soundfonts:
+  standard: &standard
+    file: FluidR3_GM.sf2
+  
+  heaven: &heaven
+    file: "Timbres_Of Heaven_GM_GS_XG_SFX_V3.4_Final.sf2"
+    
+instruments:
+
+  arpStrings: &arpStrings_inst
+    name: Atmosphere
+    soundfont: *standard
+    program: 99 # 00-099 Atmosphere
+
+  bass1: &bass1_inst
+    name: Acoustic Bass
+    soundfont: *standard
+    program: 32 # 000-032 Acoustic Bass
+
+  leftPianoBass: &leftPianoBass_inst
+    name: Bandoneon
+    soundfont: *standard
+    program: 23 # 000-023 Bandoneon
+  
+  mel5: &mel5_inst
+    name: Shamisen
+    soundfont: *standard
+    program: 106 # 000-106 Shamisen
+
+  mel5High: &mel5High_inst
+    name: Rhodes EP
+    soundfont: *standard
+    program: 4 # 000-004 Rhodes EP
+
+  mel5Low: &mel5Low_inst
+    name: Yamaha Grand Piano
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+
+  mel5Med: &mel5Med_inst
+    name: Calliope Lead
+    soundfont: *standard
+    program: 82 # 000-082 Calliope Lead
+
+  notationLP: &notationLP_inst
+    name: Shakuhachi
+    soundfont: *standard
+    program: 77 # 000-077 Shakuhachi
+
+  notationRP: &notationRP_inst
+    name: Shakuhachi
+    soundfont: *standard
+    program: 77 # 000-077 Shakuhachi
+
+  piano1: &piano1_inst
+    name: Fantasia
+    soundfont: *standard
+    program: 88 # 000-088 Fantasia
+  
+  rightPiano: &rightPiano_inst
+    name: Solo Vox
+    soundfont: *standard
+    program: 85 # 00-085 Solo Vox
+
+  rightPiano2: &rightPiano2_inst
+    name: Solo Vox
+    soundfont: *standard
+    program: 85 # 00-085 Solo Vox
+
+  violin1: &violin1_inst
+    name: Synth Voice
+    soundfont: *standard
+    program: 54 # 000-054 Synth Voice
+
+
+tracks:
+
+  arpStrings:
+    instrument: *arpStrings_inst
+    volume: 4
+
+  bass1:
+    instrument: *bass1_inst
+    volume: 4
+
+  leftPianoBass:
+    instrument: *leftPianoBass_inst
+    volume: 3
+  
+  mel5:
+    instrument: *mel5_inst
+    volume: 8
+
+  mel5High:
+    instrument: *mel5High_inst
+    volume: 7
+
+  mel5Low:
+    instrument: *mel5Low_inst
+    volume: 1
+
+  mel5Med:
+    instrument: *mel5Med_inst
+    volume: 5
+
+  notationLP:
+    instrument: *notationLP_inst
+    volume: 3
+
+  notationRP:
+    instrument: *notationRP_inst
+    volume: 3
+
+  piano1:
+    instrument: *piano1_inst
+    volume: 5
+  
+  rightPiano:
+    instrument: *rightPiano_inst
+    volume: 2
+
+  rightPiano2:
+    instrument: *rightPiano2_inst
+    volume: 2
+
+  violin1:
+    instrument: *violin1_inst
+    volume: 3

@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  beat:
+    image: watson-beat:latest
+    entrypoint: []
+    volumes:
+      - ./output/compose:/usr/app/output
+      - ./config/Ini:/usr/app/Ini/
+      - ./config/Midi:/usr/app/Midi/
+    #working_dir: /usr/app
+
+  flow:
+    image: flow:latest
+    entrypoint: []
+    volumes:
+      - .:/usr/app
+      # - ./output:/usr/app/output
+
+    #working_dir: /usr/app

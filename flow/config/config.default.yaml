@@ -1,0 +1,157 @@
+soundfonts:
+  standard: &standard
+    file: FluidR3_GM.sf2
+    
+  percussion: &percussion
+    file: Scratch_3_0-percussion.sf2
+    
+
+
+instruments:
+
+  arpStrings:
+    soundfont: *standard
+    program: 99 # 00-099 Atmosphere
+    volume: 2
+
+  bass1:
+    soundfont: *standard
+    program: 87 # 000-087 Bass & Lead
+    volume: 2
+
+  bass2:
+    soundfont: *standard
+    program: 38 # 000-038 Synth Bass 1
+    volume: 2
+
+  bass3:
+    soundfont: *standard
+    program: 38 # 000-038 Synth Bass 1
+    volume: 2
+
+  brassRhythms:
+    soundfont: *standard
+    program: 61 # 000-061 Brass Section
+    volume: 2
+
+  cello:
+    soundfont: *standard
+    program: 42 # 000-042 Cello
+    volume: 2
+
+  doubleBass:
+    soundfont: *standard
+    program: 43 # 000-043 Contrabass
+    volume: 2
+
+  leftPianoBass:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+  
+  mel5:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+
+  mel5High:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+
+  mel5Low:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+
+  mel5Med:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+
+  notationLP:
+    soundfont: *standard
+    program: 62 # 000-062 Synth Brass 1
+    volume: 2
+
+  notationRP:
+    soundfont: *standard
+    program: 63 # 00-063 Synth Brass 2
+    volume: 2
+
+  piano1:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+  
+  rightPiano:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+
+  rightPiano2:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+
+  viola:
+    soundfont: *standard
+    program: 41 # 000-041 Viola
+    volume: 2
+
+  violin1:
+    soundfont: *standard
+    program: 40 # 00-040 Violin
+    volume: 2
+
+  violin2:
+    soundfont: *standard
+    program: 40 # 00-040 Violin
+    volume: 2  
+    
+  violin1:
+    soundfont: *standard
+    program: 41 # 000-041 Viola
+    volume: 2
+
+  rhythmChords:
+    soundfont: *standard
+    program: 0 # 000-000 Yamaha Grand Piano
+    volume: 2
+
+  # DRUMS --------------
+
+  drumsBass:
+    soundfont: *percussion
+    program: 0 # 000-000 percussion
+    volume: 2  
+    
+  drumsCymbalSwell:
+    soundfont: *percussion
+    program: 0 # 000-000 percussion
+    volume: 2
+
+  drumsKit:
+    soundfont: *percussion
+    program: 0 # 000-000 percussion
+    volume: 2
+
+  drumsLatinPop:
+    soundfont: *percussion
+    program: 0 # 000-000 percussion
+    volume: 2
+
+  drumsKick:
+    soundfont: *percussion
+    program: 0 # 000-000 percussion
+    volume: 2
+
+  drumsSnare:
+    soundfont: *percussion
+    program: 0 # 000-000 percussion
+    volume: 2
+
+  fillsForDrums:
+    soundfont: *percussion
+    program: 0 # 000-000 percussion
+    volume: 2

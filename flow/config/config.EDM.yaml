@@ -1,0 +1,193 @@
+soundfonts:
+
+  standard: &standard_sf
+    file: FluidR3_GM.sf2
+
+  electricGuitars: &electricGuitars_sf
+    file: Electric-Guitars-JNv4.4.sf2 
+    
+  percussion: &percussion_sf
+    file: Scratch_3_0-percussion.sf2
+    
+instruments:
+
+  atmosphere: &atmosphere_inst
+    name: Atmosphere
+    soundfont: *standard_sf
+    program: 99 
+
+  acoustic_bass: &acousticBass_inst
+    name: Acoustic Bass
+    soundfont: *standard_sf
+    program: 32 
+
+  # acoustic_bass: &acousticBass_inst
+  #   name: Guitar HarmonicsFR3
+  #   soundfont: *electricGuitars_sf
+  #   program: 38
+
+  electric_bass: &electricBass_inst
+    name: LP Twin Dynamic
+    soundfont: *electricGuitars_sf
+    program: 5
+
+  brass: &brass_inst
+    name: Synth Brass 1
+    soundfont: *standard_sf
+    program: 62
+
+  cello: &cello_inst
+    name: Cello
+    soundfont: *standard_sf
+    program: 42 
+
+  contrabass: &contrabass_inst
+    name: Contrabass
+    soundfont: *standard_sf
+    program: 43 
+
+  grandPiano: &grandPiano_inst
+    name: Yamaha Grand Piano
+    soundfont: *standard_sf
+    program: 0 
+
+  guitar: &guitar_inst
+    name: Overdrive RF
+    soundfont: *electricGuitars_sf
+    program: 26
+
+  leadGuitar: &leadGuitar_inst
+    name: Overdrive GU DynPick
+    soundfont: *electricGuitars_sf
+    program: 15 # 29 # 23
+
+  viola: &viola_inst
+    name: Viola
+    soundfont: *standard_sf
+    program: 41
+
+  violin: &violin_inst
+      name: Violin
+      soundfont: *standard_sf
+      program: 40
+
+  drums: &drums_inst
+    name: Drums
+    soundfont: *percussion_sf
+    program: 0
+
+tracks:
+
+  # arpStrings:
+  #   instrument: *atmosphere_inst
+  #   volume: 4
+
+  bass1:
+    instrument: *electricBass_inst
+    volume: 2
+
+  bass2:
+    instrument: *electricBass_inst
+    volume: 2
+
+  bass3:
+    instrument: *electricBass_inst
+    volume: 2
+
+  brassRhythms:
+    instrument: *guitar_inst
+    volume: 2
+
+  cello:
+    instrument: *cello_inst
+    volume: 2
+
+  doubleBass:
+    instrument: *contrabass_inst
+    volume: 2
+
+  leftPianoBass:
+    instrument: *grandPiano_inst
+    volume: 2
+  
+  mel5:
+    instrument: *leadGuitar_inst
+    volume: 6
+
+  mel5High:
+    instrument: *leadGuitar_inst
+    volume: 4
+
+  mel5Low:
+    instrument: *leadGuitar_inst
+    volume: 6
+
+  mel5Med:
+    instrument: *leadGuitar_inst
+    volume: 5
+
+  notationLP:
+    instrument: *acousticBass_inst
+    volume: 1
+
+  notationRP:
+    instrument: *acousticBass_inst
+    volume: 1
+
+  piano1:
+    instrument: *guitar_inst
+    volume: 2
+  
+  rightPiano:
+    instrument: *guitar_inst
+    volume: 2
+
+  rightPiano2:
+    instrument: *guitar_inst
+    volume: 2
+
+  viola:
+    instrument: *viola_inst
+    volume: 1
+
+  violin1:
+    instrument: *violin_inst
+    volume: 1
+
+  violin2:
+    instrument: *violin_inst
+    volume: 1  
+
+  rhythmChords:
+    instrument: *grandPiano_inst
+    volume: 2
+
+  # DRUMS --------------
+
+  drumsBass:
+    instrument: *drums_inst
+    volume: 7
+    
+  drumsCymbalSwell:
+    instrument: *drums_inst
+    volume: 7
+
+  drumsKit:
+    instrument: *drums_inst
+    volume: 7
+
+  drumsLatinPop:
+    instrument: *drums_inst
+    volume: 7
+
+  drumsKick:
+    instrument: *drums_inst
+    volume: 7
+
+  drumsSnare:
+    instrument: *drums_inst
+    volume: 7
+
+  fillsForDrums:
+    instrument: *drums_inst
+    volume: 7

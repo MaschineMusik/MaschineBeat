@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+
+  <body>
+
+    <div id="content">
+      TEXT 
+    </div>
+
+    <script>
+        content = document.getElementById('content'),
+        content.textContent = "HELLO WORLD";
+
+
+        caches.open('v1').then(function(cache) {
+
+            content.textContent = "OPENED";
+
+            cache.keys().then(function(keys) {
+
+                content.textContent = "KEYS:" + keys.length;
+                keys.forEach(function(request, index, array) {
+                    content.textContent = request;
+                });
+            });
+        });
+
+    </script>
+
+ 
+
+</body></html>
+

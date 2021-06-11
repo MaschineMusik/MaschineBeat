@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Riff Hero</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<script>
+
+  soundsPrefix = "http://localhost:8000/sounds/"
+
+  sounds = [
+      "HMRhyMix150e-01.wav",
+      "HMRhyMix150e-02.wav",
+      "HMRhyMix150e-03.wav",
+      "HMRhyMix150e-04.wav",
+      "HMRhyMix150e-05.wav",
+      "HMRhyMix150e-06.wav"
+  ];
+
+</script> 
+
+<script
+    type="text/javascript"
+    src="audio.js"
+></script> 
+
+<script
+    type="text/javascript"
+    src="midi.js"
+></script> 
+
+</head>
+
+<body>
+    <!--<script src="https://unpkg.com/unmute" data-add-button="true"></script>-->
+
+
+
+<div class="header">
+    Riff Hero
+</div>
+
+<div id="content" class="fretboard">
+
+    <div class="row">
+        <div class="button" data-key="q" data-sound="0"></div>
+        <div class="button" data-key="1" data-sound="1"></div>
+
+    </div>
+
+    <div class="row">
+        <div class="button" data-key="w" data-sound="2"></div>
+        <div class="button" data-key="2" data-sound="3"></div>
+
+    </div>
+
+    <div class="row">
+        <div class="button" data-key="e" data-sound="4"></div>
+        <div class="button" data-key="3" data-sound="5"></div>
+
+    </div>
+        
+</div>
+
+<div id="device_info">
+    <div id="key_data"></div>
+</div>
+
+  
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "upae79bu"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+  <script
+    type="text/javascript"
+    src="main.js"
+  ></script> 
+
+</body>
+</html>

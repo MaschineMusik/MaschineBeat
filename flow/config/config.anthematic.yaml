@@ -1,0 +1,265 @@
+soundfonts:
+  standard_sf: &standard_sf
+    file: FluidR3_GM.sf2
+
+  percussion: &percussion_sf
+    file: Scratch_3_0-percussion.sf2
+  
+  heaven: &heaven_sf
+    file: "Timbres_Of Heaven_GM_GS_XG_SFX_V3.4_Final.sf2"
+    
+
+instruments:
+
+  arpStrings: &arpStrings_inst
+    name: Atmosphere
+    soundfont: *standard_sf
+    program: 99 # 00-099 Atmosphere
+
+  bass1: &bass1_inst
+    name: Acoustic Bass
+    soundfont: *standard_sf
+    program: 32 # 000-032 Acoustic Bass
+
+  bass2: &bass2_inst
+    name: Synth Bass 1
+    soundfont: *standard_sf
+    program: 38 # 000-038 Synth Bass 1
+
+  cello: &cello_inst
+    name: Cello
+    soundfont: *standard_sf
+    program: 42 # 000-042 Cello
+
+  doubleBass: &doubleBass_inst
+    name: Contrabass
+    soundfont: *standard_sf
+    program: 43 # 000-043 Contrabass
+
+  # leftPianoBass:
+  #   soundfont: *standard_sf
+  #   program: 39 # 000-039 Synth Bass 2
+  #   volume: 3
+
+  leftPianoBass: &leftPianoBass_inst
+    name: Bandoneon
+    soundfont: *standard_sf
+    program: 23 # 000-023 Bandoneon  
+
+  # mel5:
+  #   soundfont: *standard_sf
+  #   program: 14 # 000-014 Tubular Bells
+  #   volume: 5
+
+  # mel5High:
+  #   soundfont: *standard_sf
+  #   program: 56 # 000-056 Trumpet
+  #   volume: 5
+
+  # mel5Low:
+  #   soundfont: *standard_sf
+  #   program: 58 # 000-058 Tuba
+  #   volume: 5
+
+  # mel5Med:
+  #   soundfont: *standard_sf
+  #   program: 57 # 000-057 Trombone
+  #   volume: 5
+
+  mel5: &mel5_inst
+    name: Shamisen
+    soundfont: *standard_sf
+    program: 106 # 000-106 Shamisen
+
+  mel5High: &mel5High_inst
+    name: Rhodes EP
+    soundfont: *standard_sf
+    program: 4 # 000-004 Rhodes EP
+
+  mel5Low: &mel5Low_inst
+    name: Yamaha Grand Piano
+    soundfont: *standard_sf
+    program: 0 # 000-000 Yamaha Grand Piano
+
+  mel5Med: &mel5Med_inst
+    name: Calliope Lead
+    soundfont: *standard_sf
+    program: 82 # 000-082 Calliope Lead
+
+  # notationLP:
+  #   soundfont: *standard_sf
+  #   program: 62 # 000-062 Synth Brass 1
+  #   volume: 2
+
+  # notationRP:
+  #   soundfont: *standard_sf
+  #   program: 63 # 00-063 Synth Brass 2
+  #   volume: 2
+
+  notationLP: &notationLP_inst
+    name: Shakuhachi
+    soundfont: *standard_sf
+    program: 77 # 000-077 Shakuhachi
+
+  notationRP: &notationRP_inst
+    name: Shakuhachi
+    soundfont: *standard_sf
+    program: 77 # 000-077 Shakuhachi
+
+  # piano1:
+  #   soundfont: *standard_sf
+  #   program: 19 # 00-019 Church Organ
+  #   volume: 9
+  
+  # rightPiano:
+  #   soundfont: *standard_sf
+  #   program: 18 # 00-018 Rock Organ
+  #   volume: 7
+
+  # rightPiano2:
+  #   soundfont: *standard_sf
+  #   program: 18 # 00-018 Rock Organ
+  #   volume: 7
+
+  piano1: &piano1_inst
+    name: Fantasia
+    soundfont: *standard_sf
+    program: 88 # 000-088 Fantasia
+  
+  rightPiano: &rightPiano_inst
+    name: Solo Vox
+    soundfont: *standard_sf
+    program: 85 # 00-085 Solo Vox
+
+
+  # viola:
+  #   soundfont: *standard_sf
+  #   program: 41 # 000-041 Viola
+  #   volume: 4
+
+  # violin1:
+  #   soundfont: *standard_sf
+  #   program: 40 # 00-040 Violin
+  #   volume: 4
+
+  # violin2:
+  #   soundfont: *standard_sf
+  #   program: 40 # 00-040 Violin
+  #   volume: 2  
+
+  viola: &viola_inst
+    name: Synth Voice
+    soundfont: *standard_sf
+    program: 54 # 000-054 Synth Voice
+
+  violin: &violin_inst
+    name: Synth Voice
+    soundfont: *standard_sf
+    program: 54 # 000-054 Synth Voice
+
+  # rhythmChords:
+  #   soundfont: *standard_sf
+  #   program: 0 # 000-000 Yamaha Grand Piano
+  #   volume: 2
+
+  rhythmChords: &rhythmChords_inst
+    name: Yamaha Grand Piano
+    soundfont: *standard_sf
+    program: 0 # 000-000 Yamaha Grand Piano
+
+  drums: &drums_inst
+    name: Drums
+    soundfont: *percussion_sf
+    program: 0
+
+tracks:
+
+  arpStrings:
+    instrument: *arpStrings_inst
+    volume: 2
+
+  bass1:
+    instrument: *bass1_inst
+    volume: 4
+
+  bass2:
+    instrument: *bass1_inst
+    volume: 4
+
+  cello:
+    instrument: *cello_inst
+    volume: 2
+
+  doubleBass:
+    instrument: *doubleBass_inst
+    volume: 3
+
+  leftPianoBass:
+    instrument: *leftPianoBass_inst
+    volume: 3
+  
+  mel5:
+    instrument: *mel5_inst
+    volume: 5
+
+  mel5High:
+    instrument: *mel5High_inst
+    volume: 5
+
+  mel5Low:
+    instrument: *mel5Low_inst
+    volume: 5
+
+  mel5Med:
+    instrument: *mel5Med_inst
+    volume: 5
+
+  notationLP:
+    instrument: *notationLP_inst
+    volume: 2
+
+  notationRP:
+    instrument: *notationRP_inst
+    volume: 2
+
+  piano1:
+    instrument: *piano1_inst
+    volume: 9
+  
+  rightPiano:
+    instrument: *rightPiano_inst
+    volume: 7
+
+  rightPiano2:
+    instrument: *rightPiano_inst
+    volume: 7
+
+  viola:
+    instrument: *viola_inst
+    volume: 4
+
+  violin1:
+    instrument: *violin_inst
+    volume: 4
+
+  violin2:
+    instrument: *violin_inst
+    volume: 4
+
+  # DRUMS --------------
+
+  drumsBass:
+    instrument: *drums_inst
+    volume: 2
+    
+  drumsCymbalSwell:
+    instrument: *drums_inst
+    volume: 6
+
+  drumsKick:
+    instrument: *drums_inst
+    volume: 6
+
+  drumsSnare:
+    instrument: *drums_inst
+    volume: 6
