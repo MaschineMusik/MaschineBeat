@@ -39,7 +39,6 @@ ready:
 # THE REAL STUFF -----------
 
 
-
 capture:
 	arecordmidi -p 0 -b 180 config/Midi/$(MIDI).mid
 
